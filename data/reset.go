@@ -1,0 +1,15 @@
+/*
+Package data manages the memory file.
+*/
+package data
+
+/*
+reset returns the default binary data, for the memory file. In case is corrupted or deleted; or if you get mad that
+someone broke your record.  :-)
+*/
+func reset() []byte {
+	return []byte{
+		//TODO: 0x20, 0x20, 0x20, 0x20, 0x30, 0x2e, 0x30, 0x31, 0x2e, 0x30, 0x30, 0x30, 0x01, 0x40, 0x00, 0xf0,
+		0x01, 0x40, 0x00, 0xf0,
+	}
+}
